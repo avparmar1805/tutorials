@@ -1,0 +1,47 @@
+<ion-view title="New Order">
+    <ion-content>
+
+        <div class="item">
+
+            <button class="button button-positive" modal-select="" ng-model="selectedChain" options="chains" modal-title="Select chain" has-search="true">
+                Select chain
+                <div class="option">
+                    {{option}}
+                </div>
+            </button>
+
+        </div>
+        <div class="item">
+
+            <button class="button button-positive" modal-select="" ng-model="selectedCity" options="city" modal-title="Select city" has-search="true">
+                Select city
+                <div class="option">
+                    {{option}}
+                </div>
+            </button>
+
+        </div>
+        <div class="item">
+
+            <button class="button button-positive" modal-select="" ng-model="selectedLocation" options="locations" modal-title="Select location" has-search="true">
+                Select location
+                <div class="option">
+                    {{option}}
+                </div>
+            </button>
+
+        </div>
+        <div class="item">
+            Selected Chain: {{selectedChain}}
+        </div>
+        <div class="item">
+            Selected City: {{selectedCity}}
+        </div>
+        <div class="item">
+            Selected Location: {{selectedLocation}}
+        </div>
+        <p>
+            <a class="button icon icon-right ion-chevron-right" href="#/tab/selectOrder">Select Order</a>
+        </p>
+    </ion-content>
+</ion-view>

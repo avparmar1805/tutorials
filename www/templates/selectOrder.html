@@ -1,0 +1,65 @@
+<style>
+    .slider-slide h3{
+    color:#fff;
+    margin-top:10px;
+    }
+    .scroll{
+    height:100%;
+    }
+
+    .tabbed-slidebox .tsb-icons:after{
+    display:none;
+    }
+</style>
+<ion-view title="Starbucks Cafe">
+    <ion-content scroll="false">
+        <tab-slide-box>
+            <div class="tsb-icons">
+                <div class="tsb-ic-wrp">
+                    <ion-scroll direction="x" class="tsb-hscroll">
+                        <a href="javascript:;" class="ion-home1">Coffee</a>
+                        <a href="javascript:;" class="ion-home1">Hot Breakfast</a>
+                        <a href="javascript:;" class="ion-ios-game-controller-b1">Bistro Boxes</a>
+                        <a href="javascript:;" class="ion-email1">Bakery</a>
+                        <a href="javascript:;" class="ion-model-s1">Sandwiches</a>
+                        <a href="javascript:;" class="ion-person1">Salads</a>
+                        <a href="javascript:;" class="ion-heart1">Yogurt & Fruits</a>
+                        <a href="javascript:;" class="ion-chatbubbles1">Starbucks Evenings</a>
+                    </ion-scroll>
+                </div>
+            </div>
+            <ion-slide-box show-pager="false" on-slide-changed="slideHasChanged($index)">
+                <ion-slide>
+                    <h3>Home content</h3>
+                </ion-slide>
+                <ion-slide>
+                    <h3>Games content</h3>
+                </ion-slide>
+                <ion-slide>
+                    <h3>Mail content</h3>
+                </ion-slide>
+                <ion-slide>
+                    <h3>Car content</h3>
+                </ion-slide>
+                <ion-slide>
+                    <h3>Profile content</h3>
+                </ion-slide>
+                <ion-slide>
+                    <h3>Favourites content</h3>
+                </ion-slide>
+                <ion-slide>
+                    <h3>Chats content</h3>
+                </ion-slide>
+                <ion-slide>
+                    <h3>Settings content</h3>
+                </ion-slide>
+                <ion-slide>
+                    <h3>Photos content</h3>
+                </ion-slide>
+                <ion-slide>
+                    <h3>Pets content</h3>
+                </ion-slide>
+            </ion-slide-box>
+        </tab-slide-box>
+    </ion-content>
+</ion-view>
